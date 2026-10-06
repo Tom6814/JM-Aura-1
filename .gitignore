@@ -1,0 +1,65 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Configurations and sensitive files
+backend/config/*.json
+!backend/config/*.example.json
+config/*.json
+!config/*.example.json
+backend/config/cookies/
+config/cookies/
+server/config/
+shit.json
+backend/1
+# Go 构建产物（单二进制）
+/jmaura
+server/jmaura
+
+# 前端依赖与构建中间物
+frontend-react/node_modules/
+jmaura.log
+
+# Go 工作区（GOPATH/GOCACHE 放在仓库内，避免污染系统目录）
+.gopath/
+.gocache/
+.gomodcache/
+
+# macOS / 临时文件
+.DS_Store
+.perf-tmp/
