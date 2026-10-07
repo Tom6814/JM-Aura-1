@@ -1,6 +1,7 @@
 package jm
 
 import (
+	"bytes"
 	"compress/gzip"
 	"context"
 	"encoding/base64"
@@ -164,6 +165,7 @@ func (c *Client) doRequest(ctx context.Context, method, fullURL string, form url
 	if err != nil {
 		return resp.StatusCode, nil, resp.Header, err
 	}
+	data = bytes.TrimPrefix(data, []byte{0xEF, 0xBB, 0xBF})
 	return resp.StatusCode, data, resp.Header, nil
 }
 
