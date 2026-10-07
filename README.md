@@ -215,6 +215,7 @@ npm run dev
 | `JM_AURA_AFDIAN_USER_ID`       | 爱发电开发者 user_id（赞助名单 / 订单校验） | 空（功能优雅降级）          |
 | `JM_AURA_AFDIAN_TOKEN`         | 爱发电开发者 API Token（仅参与签名）        | 空（功能优雅降级）          |
 | `JM_AURA_AFDIAN_BINDINGS_PATH` | 爱发电赞助绑定文件                         | `DataDir/afdian_bindings.json` |
+| `JM_AURA_DL_CONCURRENCY`       | 下载/导出同时执行的任务数（2 核机器建议保持 1；上限 4） | `1`                     |
 | `JM_AURA_DL_MAX_QUEUED`        | 单账号同时排队的下载/导出任务上限（防误刷，非永久拒绝） | `10`                    |
 
 ### DATABASE_URL 连接串示例
